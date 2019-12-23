@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="886cb0b5-8837-4ea0-a9a1-50b4c9e772dc" name="mod_bearscards - acorn" url="http://acorn.local">
+        <fileTransfer port="0" mountedRoot="D:\Development\neard\www\acorn\modules\mod_bearscards" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

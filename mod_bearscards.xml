@@ -26,7 +26,7 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-					name="domain"
+					name="link"
 					type="url"
 					label="MOD_BEARSCARDS_URL_LABEL"
 					description="MOD_BEARSCARDS_URL_DESCRIPTION"
@@ -34,6 +34,34 @@
 					filter="url"
 					validate="url"
 				/>
+				<field
+					name = "image"
+					type="media"
+					label="MOD_BEARSCARDS_IMAGE_LABEL"
+					description="MOD_BEARSCARDS_IMAGE_DESC"
+					default=""
+					/>
+				<field
+					name = "caption"
+					type = "text"
+					default=""
+					label = "MOD_BEARSCARDS_CAPTION_LABEL"
+					description="MOD_BEARSCARDS_CAPTION_DESC"
+					/>
+				<field
+					name = "body"
+					type = "textarea"
+					default=""
+					label="MOD_BEARSCARDS_BODY_LABEL"
+					description="MOD_BEARSCARDS_BODY_DESC"
+					/>
+				<field
+					name = "footer"
+					type = "textarea"
+					default=""
+					label="MOD_BEARSCARDS_FOOTER_LABEL"
+					description="MOD_BEARSCARDS_FOOTER_DESC"
+					/>
 			</fieldset>
 			<fieldset
 					name="advanced">
