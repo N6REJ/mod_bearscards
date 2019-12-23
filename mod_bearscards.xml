@@ -1,115 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.8" client="site" method="upgrade">
-	<name>mod_bearscards</name>
-	<creationDate>23-Dec-19</creationDate>
-	<author>Bear</author>
-	<authorEmail>programming@hallhome.us</authorEmail>
-	<authorUrl>http://hallhome.us</authorUrl>
-	<copyright>Troy T. Hall</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>j3.9.2019.12.23</version>
-	<description>MOD_BEARSCARDS_XML_DESCRIPTION</description>
+<extension type = "module" version = "3.8" client = "site" method = "upgrade">
+    <name>mod_bearscards</name>
+    <creationDate>23-Dec-19</creationDate>
+    <author>Bear</author>
+    <authorEmail>programming@hallhome.us</authorEmail>
+    <authorUrl>http://hallhome.us</authorUrl>
+    <copyright>Troy T. Hall</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>j3.9.2019.12.23</version>
+    <description>MOD_BEARSCARDS_XML_DESCRIPTION</description>
 
-	<files>
-		<filename module="mod_bearscards">mod_bearscards.php</filename>
-		<folder>tmpl</folder>
-		<folder>language</folder>
-		<filename>mod_bearscards.xml</filename>
-	</files>
-	<media folder="media" destination="mod_bearscards">
-		<folder>css</folder>
-	</media>
-	<!-- Update servers -->
-	<updateservers>
-		<server type="extension" priority="1" name="mod_bearscards">https://hallhome.us/mod_bearscards.xml</server>
-	</updateservers>
+    <files>
+        <filename module = "mod_bearscards">mod_bearscards.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <filename>mod_bearscards.xml</filename>
+    </files>
+    <media folder = "media" destination = "mod_bearscards">
+        <folder>css</folder>
+    </media>
+    <!-- Update servers -->
+    <updateservers>
+        <server type = "extension" priority = "1" name = "mod_bearscards">https://hallhome.us/mod_bearscards.xml
+        </server>
+    </updateservers>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
+    <config>
+        <fields name = "params">
+            <fieldset name = "basic">
 
-				<field
-					name="link"
-					type="url"
-					label="MOD_BEARSCARDS_URL_LABEL"
-					description="MOD_BEARSCARDS_URL_DESCRIPTION"
-					hint="https://www.example.com"
-					filter="url"
-					validate="url"
-				/>
-				<field
-					name = "image"
-					type="media"
-					label="MOD_BEARSCARDS_IMAGE_LABEL"
-					description="MOD_BEARSCARDS_IMAGE_DESC"
-					default=""
-					/>
-				<field
-					name = "imageAlt"
-					type="text"
-					default=""
-					label="MOD_BEARSCARDS_ALT_TEXT_LABEL"
-					description="MOD_BEARSCARDS_ALT_TEXT_DESC"
-					/>
-				<field
-					name = "caption"
-					type = "text"
-					default=""
-					label = "MOD_BEARSCARDS_CAPTION_LABEL"
-					description="MOD_BEARSCARDS_CAPTION_DESC"
-					/>
-				<field
-						name = "header"
-						type = "editor"
-						default=""
-						label="MOD_BEARSCARDS_HEADER_LABEL"
-						description="MOD_BEARSCARDS_HEADER_DESC"
-				/>
-				<field
-					name = "body"
-					type = "editor"
-					default=""
-					label="MOD_BEARSCARDS_BODY_LABEL"
-					description="MOD_BEARSCARDS_BODY_DESC"
-					/>
-				<field
-					name = "footer"
-					type = "editor"
-					default=""
-					label="MOD_BEARSCARDS_FOOTER_LABEL"
-					description="MOD_BEARSCARDS_FOOTER_DESC"
-					/>
-				<field
-					name="button"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					label="MOD_BEARSCARDS_BUTTON_LABEL"
-					description="MOD_BEARSCARDS_BUTTON_DESC"
-					>
-				<option value = "1">JYES</option>
-				<option value = "0">JNO</option>
-				</field>
-				<field
-					name = "buttonType"
-					type = "list"
-					label="MOD_BEARSCARDS_BUTTON_TYPE_LABEL"
-					description="MOD_BEARSCARDS_BUTTON_TYPE_DESC"
-					>
-					<option value = "default">default</option>
-					<option value = "primary">primary</option>
-					<option value = "success">success</option>
-					<option value = "warning">warning</option>
-					<option value = "danger">darnger</option>
-				</field>
-			</fieldset>
-			<fieldset
-					name="advanced">
-				<field
-						name="moduleclass_sfx"
-						type="text"
-						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
-			</fieldset>
-		</fields>
-	</config>
+                <field
+                        name = "link"
+                        type = "url"
+                        label = "MOD_BEARSCARDS_URL_LABEL"
+                        description = "MOD_BEARSCARDS_URL_DESCRIPTION"
+                        hint = "https://www.example.com"
+                        filter = "url"
+                        validate = "url"
+                />
+                <field
+                        name = "image"
+                        type = "media"
+                        label = "MOD_BEARSCARDS_IMAGE_LABEL"
+                        description = "MOD_BEARSCARDS_IMAGE_DESC"
+                        default = ""
+                />
+                <field
+                        name = "imageAlt"
+                        type = "text"
+                        default = ""
+                        label = "MOD_BEARSCARDS_ALT_TEXT_LABEL"
+                        description = "MOD_BEARSCARDS_ALT_TEXT_DESC"
+                />
+                <field
+                        name = "caption"
+                        type = "editor"
+                        default = ""
+                        filter="safehtml"
+                        label = "MOD_BEARSCARDS_CAPTION_LABEL"
+                        description = "MOD_BEARSCARDS_CAPTION_DESC"
+                />
+                <field
+                        name = "captionSize"
+                        type = "headertag"
+                        default = "h2"
+                        label = "MOD_BEARSCARDS_CAPTION_SIZE_LABEL"
+                        description = "MOD_BEARSCARDS_CAPTION_SIZE_DESC"
+                />
+                <field
+                        name = "header"
+                        type = "editor"
+                        default = ""
+                        filter="safehtml"
+                        label = "MOD_BEARSCARDS_HEADER_LABEL"
+                        description = "MOD_BEARSCARDS_HEADER_DESC"
+                />
+                <field
+                        name = "body"
+                        type = "editor"
+                        default = ""
+                        filter="safehtml"
+                        label = "MOD_BEARSCARDS_BODY_LABEL"
+                        description = "MOD_BEARSCARDS_BODY_DESC"
+                />
+                <field
+                        name = "footer"
+                        type = "editor"
+                        default = ""
+                        filter="safehtml"
+                        label = "MOD_BEARSCARDS_FOOTER_LABEL"
+                        description = "MOD_BEARSCARDS_FOOTER_DESC"
+                />
+                <field
+                        name = "button"
+                        type = "radio"
+                        class = "btn-group btn-group-yesno"
+                        label = "MOD_BEARSCARDS_BUTTON_LABEL"
+                        description = "MOD_BEARSCARDS_BUTTON_DESC"
+                >
+                    <option value = "1">JYES</option>
+                    <option value = "0">JNO</option>
+                </field>
+                <field
+                        name = "buttonType"
+                        type = "list"
+                        label = "MOD_BEARSCARDS_BUTTON_TYPE_LABEL"
+                        description = "MOD_BEARSCARDS_BUTTON_TYPE_DESC"
+                >
+                    <option value = "default">default</option>
+                    <option value = "primary">primary</option>
+                    <option value = "success">success</option>
+                    <option value = "warning">warning</option>
+                    <option value = "danger">darnger</option>
+                </field>
+                <field
+                        name = "buttonText"
+                        type = "text"
+                        default = ""
+                        label = "MOD_BEARSCARDS_BUTTON_TEXT_LABEL"
+                        description = "MOD_BEARSCARDS_BUTTON_TEXT_DESC"
+                />
+            </fieldset>
+            <fieldset
+                    name = "advanced">
+                <field
+                        name = "moduleclass_sfx"
+                        type = "text"
+                        label = "COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description = "COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
 </extension>

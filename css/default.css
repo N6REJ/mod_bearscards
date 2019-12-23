@@ -23,10 +23,14 @@
 .card .card-body h2:first-child,
 .card .card-body h3:first-child,
 .card .card-body h4:first-child,
+.card .card-body h5:first-child,
+.card .card-body h6:first-child,
 .card .card-body .h1,
 .card .card-body .h2,
 .card .card-body .h3,
-.card .card-body .h4{ margin-top: 0; }
+.card .card-body .h4,
+.card .card-body .h5,
+.card .card-body .h6{ margin-top: 0; }
 .card .card-body .heading{ display: block;  }
 .card .card-body .heading:last-child{ margin-bottom: 0; }
 

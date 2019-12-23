@@ -2,6 +2,7 @@
   <dictionary name="Bear">
     <words>
       <w>bearscards</w>
+      <w>moduleclass</w>
     </words>
   </dictionary>
 </component>
