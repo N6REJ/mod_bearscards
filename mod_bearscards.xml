@@ -16,7 +16,9 @@
 		<folder>language</folder>
 		<filename>mod_bearscards.xml</filename>
 	</files>
-
+	<media folder="media" destination="mod_bearscards">
+		<folder>css</folder>
+	</media>
 	<!-- Update servers -->
 	<updateservers>
 		<server type="extension" priority="1" name="mod_bearscards">https://hallhome.us/mod_bearscards.xml</server>

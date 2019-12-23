@@ -14,7 +14,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 /** @var string $customCSS */
 
 // load J! icon set
-HTMLHelper::_('stylesheet', 'default.css', array('version' => 'auto', 'relative' => true, 'detectDebug' => true));
+HTMLHelper::_('stylesheet', 'mod_bearscards/default.css', array('version' => 'auto', 'relative' => true));
 // Used with HTMLHelper::
 ?>
 <h4>Price Card</h4>
