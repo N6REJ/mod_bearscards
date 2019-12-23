@@ -14,7 +14,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Factory;
 /** @var string $params */
 
-// load J! icon set
+// Load CSS
 HTMLHelper::_('stylesheet', 'mod_bearscards/default.css', array('version' => 'auto', 'relative' => true));
 // Used with HTMLHelper::
 /**
