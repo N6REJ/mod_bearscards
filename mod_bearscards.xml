@@ -25,6 +25,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
+
 				<field
 					name="link"
 					type="url"
@@ -49,19 +50,48 @@
 					description="MOD_BEARSCARDS_CAPTION_DESC"
 					/>
 				<field
+						name = "header"
+						type = "editor"
+						default=""
+						label="MOD_BEARSCARDS_HEADER_LABEL"
+						description="MOD_BEARSCARDS_HEADER_DESC"
+				/>
+				<field
 					name = "body"
-					type = "textarea"
+					type = "editor"
 					default=""
 					label="MOD_BEARSCARDS_BODY_LABEL"
 					description="MOD_BEARSCARDS_BODY_DESC"
 					/>
 				<field
 					name = "footer"
-					type = "textarea"
+					type = "editor"
 					default=""
 					label="MOD_BEARSCARDS_FOOTER_LABEL"
 					description="MOD_BEARSCARDS_FOOTER_DESC"
 					/>
+				<field
+					name="button"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_BEARSCARDS_BUTTON_LABEL"
+					description="MOD_BEARSCARDS_BUTTON_DESC"
+					>
+				<option value = "1">JYES</option>
+				<option value = "0">JNO</option>
+				</field>
+				<field
+					name = "buttonType"
+					type = "list"
+					label="MOD_BEARSCARDS_BUTTON_TYPE_LABEL"
+					description="MOD_BEARSCARDS_BUTTON_TYPE_DESC"
+					>
+					<option value = "default">default</option>
+					<option value = "primary">primary</option>
+					<option value = "success">success</option>
+					<option value = "warning">warning</option>
+					<option value = "danger">darnger</option>
+				</field>
 			</fieldset>
 			<fieldset
 					name="advanced">
