@@ -13,10 +13,8 @@ use Joomla\CMS\HTML\HTMLHelper;
 /** @var string $theme */
 /** @var string $customCSS */
 
-$HTMLHelperDebug = array('version' => 'auto', 'relative' => true, 'detectDebug' => true);
-
 // load J! icon set
-HTMLHelper::_('stylesheet', 'css/default.css', $HTMLHelperDebug);
+HTMLHelper::_('stylesheet', 'default.css', array('version' => 'auto', 'relative' => true, 'detectDebug' => true));
 // Used with HTMLHelper::
 ?>
 <h4>Price Card</h4>

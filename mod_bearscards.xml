@@ -43,6 +43,13 @@
 					default=""
 					/>
 				<field
+					name = "imageAlt"
+					type="text"
+					default=""
+					label="MOD_BEARSCARDS_ALT_TEXT_LABEL"
+					description="MOD_BEARSCARDS_ALT_TEXT_DESC"
+					/>
+				<field
 					name = "caption"
 					type = "text"
 					default=""
