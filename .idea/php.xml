@@ -2,7 +2,12 @@
 <project version="4">
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <PhpCSConfiguration beautifier_path="D:/Development/neard/tools/composer/composer1.8.5/vendor/squizlabs/php_codesniffer/scripts/phpcbf" standards="Joomla;Joomla-CMS;Joomla-Stats;MySource;PEAR;PSR1;PSR12;PSR2;Squiz;Zend;application;archive;authentication;codeception;console;crypt;data;database;di;event;filesystem;http;image;ldap;oauth1;oauth2;registry;router;session;string;uri;utilities" tool_path="D:/Development/neard/tools/composer/composer1.8.5/vendor/squizlabs/php_codesniffer/scripts/phpcs" />
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/../../../tools/composer/composer1.8.5/vendor/squizlabs/php_codesniffer/scripts/phpcbf" standards="Joomla;Joomla-CMS;Joomla-Stats;MySource;PEAR;PSR1;PSR12;PSR2;Squiz;Zend;application;archive;authentication;codeception;console;crypt;data;database;di;event;filesystem;http;image;ldap;oauth1;oauth2;registry;router;session;string;uri;utilities" tool_path="$PROJECT_DIR$/../../../tools/composer/composer1.8.5/vendor/squizlabs/php_codesniffer/scripts/phpcs" />
     </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../../www/butternut" />
+    </include_path>
   </component>
 </project>

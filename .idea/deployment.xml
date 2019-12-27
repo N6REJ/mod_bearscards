@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="mod_bearscards - acorn">
+  <component name="PublishConfigData" autoUpload="Always" serverName="butternut" traceLevel="ERRORS">
     <serverData>
       <paths name="Butternut">
         <serverdata>
@@ -58,7 +58,14 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="mod_bearscards - acorn">
+      <paths name="bearscards - acorn">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="bearscards-butternut">
         <serverdata>
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$" web="/" />

@@ -11,7 +11,6 @@
       <option name="ALIGN_CLOSING_BRACE_WITH_PROPERTIES" value="true" />
     </CssCodeStyleSettings>
     <HTMLCodeStyleSettings>
-      <option name="HTML_SPACE_AROUND_EQUALITY_IN_ATTRIBUTE" value="true" />
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
     </HTMLCodeStyleSettings>
     <LessCodeStyleSettings>

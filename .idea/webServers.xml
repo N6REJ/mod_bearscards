@@ -2,9 +2,21 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="886cb0b5-8837-4ea0-a9a1-50b4c9e772dc" name="mod_bearscards - acorn" url="http://acorn.local">
+      <webServer id="6cc5d895-297f-4cbd-8c7d-a7c31bc963f0" name="bearscards-butternut" url="http://butternut.local">
+        <fileTransfer port="0" mountedRoot="D:\Development\neard\www\butternut\modules\mod_bearscards" accessType="MOUNT" />
+      </webServer>
+      <webServer id="480848b8-e0c2-4900-a382-36045d12a4b8" name="bearscards - acorn" url="http://acorn.local">
         <fileTransfer port="0" mountedRoot="D:\Development\neard\www\acorn\modules\mod_bearscards" accessType="MOUNT" />
       </webServer>
     </option>
+    <groups>
+      <group>
+        <name>butternut</name>
+        <servers>
+          <name value="bearscards-butternut" />
+          <name value="bearscards - acorn" />
+        </servers>
+      </group>
+    </groups>
   </component>
 </project>

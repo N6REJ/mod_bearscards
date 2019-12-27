@@ -7,7 +7,7 @@
     <authorUrl>http://hallhome.us</authorUrl>
     <copyright>Troy T. Hall</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-    <version>j3.9.2019.12.23</version>
+    <version>j3.9.2019.12.27</version>
     <description>MOD_BEARSCARDS_XML_DESCRIPTION</description>
 
     <files>
@@ -56,6 +56,7 @@
                         name = "caption"
                         type = "editor"
                         default = ""
+                        width = "500"
                         filter="safehtml"
                         label = "MOD_BEARSCARDS_CAPTION_LABEL"
                         description = "MOD_BEARSCARDS_CAPTION_DESC"
@@ -71,6 +72,7 @@
                         name = "header"
                         type = "editor"
                         default = ""
+                        width = "500"
                         filter="safehtml"
                         label = "MOD_BEARSCARDS_HEADER_LABEL"
                         description = "MOD_BEARSCARDS_HEADER_DESC"
@@ -79,6 +81,7 @@
                         name = "body"
                         type = "editor"
                         default = ""
+                        width = "500"
                         filter="safehtml"
                         label = "MOD_BEARSCARDS_BODY_LABEL"
                         description = "MOD_BEARSCARDS_BODY_DESC"
@@ -87,6 +90,7 @@
                         name = "footer"
                         type = "editor"
                         default = ""
+                        width = "500"
                         filter="safehtml"
                         label = "MOD_BEARSCARDS_FOOTER_LABEL"
                         description = "MOD_BEARSCARDS_FOOTER_DESC"
