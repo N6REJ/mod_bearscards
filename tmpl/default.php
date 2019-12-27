@@ -27,7 +27,6 @@ $app = Factory::getApplication();
 $doc = Factory::getDocument();
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
-var_dump($params);
 
 ?>
 <div class="<?php echo $moduleclass_sfx; ?>">
