@@ -11,7 +11,7 @@
 .card .card-img .card-caption{
 	position: absolute;
 	right: 0;
-	bottom: 16px;
+	bottom: 0;
 	left: 0;
 	}
 .card .card-body{ display: table; width: 100%; padding: 12px; }
@@ -95,8 +95,13 @@
 	margin: 24px 0 16px;
 	}
 .card-price .price small{ font-size: 0.4em; color: #66a5da; }
-.card-price .details{ list-style: none; margin-bottom: 24px; padding: 0 18px; }
+.card-price .details{ list-style: none; margin-bottom: 24px; padding: 0 15px; }
 .card-price .details li{ text-align: center; margin-bottom: 8px; }
 .card-price .buy-now{ text-transform: uppercase; }
 .card-price table .price{ font-size: 1.2em; font-weight: 700; text-align: left; }
 .card-price table .note{ color: #666; font-size: 0.8em; }
+
+.card-footer img, .card-header img {
+	max-width: 100%;
+	height: auto;
+	}

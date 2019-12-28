@@ -63,6 +63,12 @@
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build.bat" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.releases" />
+          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="bearscards-butternut">
@@ -70,6 +76,12 @@
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/build.bat" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.releases" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

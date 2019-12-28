@@ -15,9 +15,10 @@ use Joomla\CMS\Factory;
 
 /** @var string $params */
 
+
 // Load CSS
 HTMLHelper::_('stylesheet', 'mod_bearscards/default.css', array('version' => 'auto', 'relative' => true));
-// Used with HTMLHelper::
+
 /**
  * ==================================================
  * Joomla Variables
@@ -25,17 +26,23 @@ HTMLHelper::_('stylesheet', 'mod_bearscards/default.css', array('version' => 'au
  */
 $app = Factory::getApplication();
 $doc = Factory::getDocument();
+// We need to be able to hide the header if its empty
+$header = $params->get('header');
+$footer = $params->get('footer');
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 ?>
-<div class="<?php echo $moduleclass_sfx; ?>">
-	<h4 class="card-header"><?php echo $params->get('header'); ?></h4>
+<div id="bearscards" <?php  echo $moduleclass_sfx ? 'class=" . $moduleclass_sfx' : ''; ?>>
+	<?php if ( $header ) {
+		echo '<div class="card-header img-fluid">' . $header . '</div>';
+	} ?>
 	<div class="card card-price">
 		<div class="card-img">
 			<?php if ( $params->get('image') ) { ?>
 				<a href="<?php echo $params->get('link'); ?>">
-					<img src="<?php echo $params->get('image'); ?>" class="img-responsive" alt="<?php echo $params->get('imageAlt'); ?>">
+					<img src="<?php echo $params->get('image'); ?>" class="img-fluid"
+					     alt="<?php echo $params->get('imageAlt'); ?>">
 					<div class="card-caption">
 						<span class="<?php echo $params->get('captionSize'); ?>"><?php echo $params->get('caption'); ?></span>
 					</div>
@@ -55,9 +62,9 @@ $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 				</a>
 			<?php } ?>
 		</div>
-		<?php if ( $params->get('footer') ) { ?>
-			<div class="card-footer"><?php echo $params->get('footer'); ?></div>
-		<?php } ?>
+		<?php if ( $footer ) {
+			echo '<div class="card-footer img-fluid">' . $footer . '</div>';
+		} ?>
 	</div>
 </div>
 
