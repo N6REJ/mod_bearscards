@@ -33,7 +33,7 @@ $footer = $params->get('footer');
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 ?>
-<div id="bearscards" <?php  echo $moduleclass_sfx ? 'class=" . $moduleclass_sfx' : ''; ?>>
+<div id="bearscards" class=d-inline-block<?php  echo $moduleclass_sfx ? ' ' . $moduleclass_sfx : ''; ?>>
 	<?php if ( $header ) {
 		echo '<div class="card-header img-fluid">' . $header . '</div>';
 	} ?>
